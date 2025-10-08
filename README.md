@@ -65,50 +65,36 @@ It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 - **Manual Build / WAR Export** used for deploying to Tomcat.
 
 ## 📁 Folder Structure
-MiniBankApp/
+/student-sponsor-platform/
 │
-├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/
-│ │ └── bankapp/
-│ │ └── servlet/
-│ │ ├── BankListServlet.java
-│ │ ├── GoogleCallbackServlet.java
-│ │ ├── GoogleLoginServlet.java
-│ │ └── StartBankLinkServlet.java
-│ │
-│ └── webapp/
-│ ├── Images/
-│ ├── META-INF/
-│ ├── WEB-INF/
-│ │ └── web.xml
-│ ├── AdminDashboard.jsp
-│ ├── AdminLogin.jsp
-│ ├── AdminLogOut.jsp
-│ ├── AdminProfile.jsp
-│ ├── BankLogin.jsp
-│ ├── BankRegister.jsp
-│ ├── Connect.jsp
-│ ├── ForgetPass.jsp
-│ ├── Home.jsp
-│ ├── index.jsp
-│ ├── LinkAcc.jsp
-│ ├── Login.jsp
-│ ├── LogOut.jsp
-│ ├── MyBanks.jsp
-│ ├── Privacy.jsp
-│ ├── Profile.jsp
-│ ├── Register.jsp
-│ ├── SelectBank.jsp
-│ ├── Transaction.jsp
-│ ├── Transfer.jsp
-│ ├── TransferProcess.jsp
-│ └── UpdateProfile.jsp
+├── /client/              # React frontend
+│   ├── /public/
+│   ├── /src/
+│   │   ├── /assets/           # Images, icons, etc.
+│   │   ├── /components/       # Reusable components (Navbar, Card, etc.)
+│   │   ├── /pages/            # Routes/pages (Home, Login, Dashboard, etc.)
+│   │   ├── /services/         # Axios API calls
+│   │   ├── /context/          # Auth/User context (if needed)
+│   │   ├── /utils/            # Helper functions (e.g., validators)
+│   │   ├── /hooks/            # Custom React hooks
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── ...config files
+│   └── package.json
 │
-└── Servers/
-└── Apache Tomcat
-
+├── /server/              # Node.js + Express backend
+│   ├── /controllers/         # Logic for each route (project, user, sponsor)
+│   ├── /models/              # Mongoose schemas
+│   ├── /routes/              # Express routes (auth, project, sponsor)
+│   ├── /middlewares/         # Auth, error handling, file uploads
+│   ├── /utils/               # JWT, email sender, etc.
+│   ├── /config/              # DB connection, environment configs
+│   ├── server.js             # Entry point
+│   └── package.json
+│
+├── .env                      # Environment variables (Mongo URI, secret keys)
+├── .gitignore
+└── README.md
 
 ## ⚡ How It Works
 1. User visits the **Login.jsp** page and signs in using **Google OAuth**.  
