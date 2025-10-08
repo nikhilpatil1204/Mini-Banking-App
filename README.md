@@ -1,4 +1,4 @@
-## Mini Banking App
+# Mini Banking App
 
 ## 🧾 Overview
 The **Mini Banking App** is a web-based banking management system developed using **Java**, **JSP**, and **Servlets**.  
