@@ -36,34 +36,6 @@ It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 - Easy navigation between Home, Profile, MyBanks, and Transaction pages.
 - Clean layout with properly linked JSP pages and servlets.
 
-## 🛠 Tech Stack
-
-### Frontend
-- **HTML5** and **CSS3** for web structure and styling.  
-- **JSP (Java Server Pages)** for generating dynamic content.  
-- **Bootstrap** for a responsive and user-friendly interface.
-
-### Backend
-- **Java Servlets** handle business logic and backend processing.  
-- **JSP** integrated with Servlets for dynamic page rendering.  
-- **Session Handling** for user authentication and state management.
-
-### Authentication
-- **Google OAuth 2.0** used for secure login through Google accounts.  
-- **GoogleCallbackServlet** and **GoogleLoginServlet** handle OAuth flow and token verification.
-
-### Database
-- **MySQL** database stores user details, bank accounts, and transactions.  
-- JDBC used to connect Servlets with MySQL for CRUD operations.  
-- Database tables manage users, admins, accounts, and transaction logs.
-
-### Server
-- **Apache Tomcat 9.0** acts as the web server for deployment and testing.
-
-### Tools & Build
-- **Eclipse IDE** for development as a **Dynamic Web Project**.  
-- **Manual Build / WAR Export** used for deploying to Tomcat.
-
 ## 📁 Folder Structure 
 ```
 MiniBankApp/
@@ -110,6 +82,34 @@ MiniBankApp/
 └── Servers/
 └── Tomcat v9.0 Server at localhost-config
 ```
+
+## 🛠 Tech Stack
+
+### Frontend
+- **HTML5** and **CSS3** for web structure and styling.  
+- **JSP (Java Server Pages)** for generating dynamic content.  
+- **Bootstrap** for a responsive and user-friendly interface.
+
+### Backend
+- **Java Servlets** handle business logic and backend processing.  
+- **JSP** integrated with Servlets for dynamic page rendering.  
+- **Session Handling** for user authentication and state management.
+
+### Authentication
+- **Google OAuth 2.0** used for secure login through Google accounts.  
+- **GoogleCallbackServlet** and **GoogleLoginServlet** handle OAuth flow and token verification.
+
+### Database
+- **MySQL** database stores user details, bank accounts, and transactions.  
+- JDBC used to connect Servlets with MySQL for CRUD operations.  
+- Database tables manage users, admins, accounts, and transaction logs.
+
+### Server
+- **Apache Tomcat 9.0** acts as the web server for deployment and testing.
+
+### Tools & Build
+- **Eclipse IDE** for development as a **Dynamic Web Project**.  
+- **Manual Build / WAR Export** used for deploying to Tomcat.
 
 ## ⚡ How It Works
 1. User visits the **Login.jsp** page and signs in using **Google OAuth**.  
