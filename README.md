@@ -118,3 +118,49 @@ MiniBankApp/
 4. The app loads linked bank accounts using **BankListServlet**.  
 5. The user can perform transactions such as deposit, transfer, or withdrawal.  
 6. Transaction history and profile updates are managed through JSP pages and backend Servlets.
+
+## ⚙️ Setup & Run Instructions
+
+### Prerequisites
+- Java JDK 8 or above  
+- Apache Tomcat 9.0  
+- MySQL Server  
+- Eclipse IDE (configured for Dynamic Web Projects)  
+- Internet connection (for Google OAuth)
+
+### Steps to Run
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/MiniBankApp.git
+2. **Import into Eclipse**
+
+- Open Eclipse → File → Import → Existing Projects into Workspace
+
+  Select the project folder.
+
+3. **Configure MySQL Database**
+
+- Create a new database in MySQL (e.g., minibankdb).
+
+- Import your .sql file if available or manually create tables.
+
+- Update your database connection details in the Servlet files or a config file.
+
+4. **Configure Google OAuth**
+
+- Go to Google Cloud Console.
+
+- Create OAuth 2.0 credentials (Client ID and Secret).
+
+- Add redirect URI (e.g., http://localhost:8080/MiniBankApp/GoogleCallbackServlet).
+
+- Update these credentials in your Servlet code.
+
+5. **Run on Tomcat Server**
+
+- Right-click project → Run As → Run on Server.
+
+- Choose Apache Tomcat and start the server.
+
+- Access the app at:
+``` http://localhost:8080/MiniBankApp/ ```
