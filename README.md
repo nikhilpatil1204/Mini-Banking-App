@@ -1,51 +1,112 @@
-# Mini Banking App
+# 💳 Mini Banking App
 
-## Overview
-The Mini Banking App is a web-based banking management system built using **Java**, **JSP**, and **Servlets**.  
-It allows users to log in securely using Google, view bank details, check balances, and manage transactions.  
-The project runs on the **Apache Tomcat Server** and uses **Google OAuth 2.0** for authentication.
+## 🧾 Overview
+The **Mini Banking App** is a web-based banking management system developed using **Java**, **JSP**, and **Servlets**.  
+It enables users to securely log in using **Google OAuth 2.0**, manage their bank accounts, and perform transactions online.  
+The app runs on **Apache Tomcat Server** and stores data in a **MySQL** database.  
+It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 
-## 🚀 Features
-- Secure user authentication using **Google Login (OAuth 2.0)**
-- Fetch and display bank details dynamically using Servlets
-- Deposit and withdrawal simulation
-- Transaction history tracking
-- JSP-based responsive interface with Bootstrap
-- Backend powered by Servlets and Java logic
+## 🚀 Main Features
+
+### 1. Secure Authentication
+- Login using **Google OAuth 2.0** for enhanced security.
+- Session-based authentication ensures secure access control.
+- Supports logout functionality with automatic session invalidation.
+
+### 2. Bank Account Management
+- View, link, and manage multiple bank accounts.
+- Bank list dynamically fetched using the **BankListServlet**.
+- Allows account registration and linking through dedicated JSP pages.
+
+### 3. Transaction Management
+- Simulated **Deposit** and **Withdrawal** features.
+- Perform secure **money transfers** between linked accounts.
+- Validates and logs all transactions for tracking.
+
+### 4. Transaction History & Profile
+- Displays a detailed transaction history for each user.
+- Allows profile updates and personal information editing.
+- Dashboard shows account overview and latest transaction data.
+
+### 5. Admin Module
+- Admin login with a separate dashboard.
+- Admins can view user data, manage banks, and perform administrative operations.
+
+### 6. User-Friendly Interface
+- Responsive and modern design using **Bootstrap**.
+- Easy navigation between Home, Profile, MyBanks, and Transaction pages.
+- Clean layout with properly linked JSP pages and servlets.
 
 ## 🛠 Tech Stack
 
-| Layer | Technology Used |
-|-------|------------------|
-| Frontend | HTML, CSS, JSP, Bootstrap |
-| Backend | Java, Servlets |
-| Authentication | Google OAuth 2.0 |
-| Server | Apache Tomcat |
-| Database | MySQL / Local Data |
-| Build Tool | Manual / Maven (based on setup) |
+### Frontend
+- **HTML5** and **CSS3** for web structure and styling.  
+- **JSP (Java Server Pages)** for generating dynamic content.  
+- **Bootstrap** for a responsive and user-friendly interface.
 
-## 📁 Folder Structure 
+### Backend
+- **Java Servlets** handle business logic and backend processing.  
+- **JSP** integrated with Servlets for dynamic page rendering.  
+- **Session Handling** for user authentication and state management.
 
-MiniBankingApp/
+### Authentication
+- **Google OAuth 2.0** used for secure login through Google accounts.  
+- **GoogleCallbackServlet** and **GoogleLoginServlet** handle OAuth flow and token verification.
+
+### Database
+- **MySQL** database stores user details, bank accounts, and transactions.  
+- JDBC used to connect Servlets with MySQL for CRUD operations.  
+- Database tables manage users, admins, accounts, and transaction logs.
+
+### Server
+- **Apache Tomcat 9.0** acts as the web server for deployment and testing.
+
+### Tools & Build
+- **Eclipse IDE** for development as a **Dynamic Web Project**.  
+- **Manual Build / WAR Export** used for deploying to Tomcat.
+
+## 📁 Folder Structure
+
+MiniBankApp/
 │
-├─ src/                # Java source files
-│   ├─ main/
-│   │   ├─ java/       # Java classes
-│   │   └─ webapp/     # JSP, HTML, CSS, JS
-│   │       ├─ WEB-INF/
-│   │       │   └─ web.xml
-│   │       ├─ jsp/
-│   │       │   ├─ login.jsp
-│   │       │   ├─ dashboard.jsp
-│   │       │   └─ ...
-│   │       ├─ css/
-│   │       ├─ js/
-│   │       └─ images/
+├── src/
+│ └── main/
+│ ├── java/
+│ │ └── com/
+│ │ └── bankapp/
+│ │ └── servlet/
+│ │ ├── BankListServlet.java
+│ │ ├── GoogleCallbackServlet.java
+│ │ ├── GoogleLoginServlet.java
+│ │ └── StartBankLinkServlet.java
+│ │
+│ └── webapp/
+│ ├── Images/
+│ ├── META-INF/
+│ ├── WEB-INF/
+│ │ └── web.xml
+│ ├── AdminDashboard.jsp
+│ ├── AdminLogin.jsp
+│ ├── AdminLogOut.jsp
+│ ├── AdminProfile.jsp
+│ ├── BankLogin.jsp
+│ ├── BankRegister.jsp
+│ ├── Connect.jsp
+│ ├── ForgetPass.jsp
+│ ├── Home.jsp
+│ ├── index.jsp
+│ ├── LinkAcc.jsp
+│ ├── Login.jsp
+│ ├── LogOut.jsp
+│ ├── MyBanks.jsp
+│ ├── Privacy.jsp
+│ ├── Profile.jsp
+│ ├── Register.jsp
+│ ├── SelectBank.jsp
+│ ├── Transaction.jsp
+│ ├── Transfer.jsp
+│ ├── TransferProcess.jsp
+│ └── UpdateProfile.jsp
 │
-├─ lib/                # Any external libraries (JARs)
-├─ build/              # Compiled files (usually ignored in Git)
-├─ .gitignore
-├─ pom.xml or build.gradle  # If using Maven/Gradle
-└─ README.md
-
-
+└── Servers/
+└── Apache Tomcat
