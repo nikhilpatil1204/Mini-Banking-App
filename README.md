@@ -7,7 +7,6 @@ The app runs on **Apache Tomcat Server** and stores data in a **MySQL** database
 It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 
 ## 🚀 Main Features
-
 ### 1. Secure Authentication
 - Login using **Google OAuth 2.0** for enhanced security.
 - Session-based authentication ensures secure access control.
@@ -66,7 +65,6 @@ It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 - **Manual Build / WAR Export** used for deploying to Tomcat.
 
 ## 📁 Folder Structure
-
 MiniBankApp/
 │
 ├── src/
