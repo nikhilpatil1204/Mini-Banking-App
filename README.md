@@ -132,7 +132,7 @@ MiniBankApp/
 1. **Clone the Repository**
  
    ```bash
-   git clone https://github.com/your-username/MiniBankApp.git 
+   git clone https://github.com/nikhilpatil1204/MiniBankApp.git 
 3. **Import into Eclipse**
 
 - Open Eclipse → File → Import → Existing Projects into Workspace
@@ -163,5 +163,4 @@ MiniBankApp/
 
 - Choose Apache Tomcat and start the server.
 
-- Access the app at:  
-``` http://localhost:8080/MiniBankApp/ ```
+- Access the app at:  ``` http://localhost:8080/MiniBankApp/ ```
