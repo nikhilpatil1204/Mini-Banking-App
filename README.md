@@ -1,11 +1,11 @@
-# 🏦 Mini Banking App
+# Mini Banking App
 
 ## Overview
 The Mini Banking App is a web-based banking management system built using **Java**, **JSP**, and **Servlets**.  
 It allows users to log in securely using Google, view bank details, check balances, and manage transactions.  
 The project runs on the **Apache Tomcat Server** and uses **Google OAuth 2.0** for authentication.
 
-## Features
+## 🚀 Features
 - Secure user authentication using **Google Login (OAuth 2.0)**
 - Fetch and display bank details dynamically using Servlets
 - Deposit and withdrawal simulation
@@ -13,7 +13,7 @@ The project runs on the **Apache Tomcat Server** and uses **Google OAuth 2.0** f
 - JSP-based responsive interface with Bootstrap
 - Backend powered by Servlets and Java logic
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer | Technology Used |
 |-------|------------------|
@@ -24,7 +24,7 @@ The project runs on the **Apache Tomcat Server** and uses **Google OAuth 2.0** f
 | Database | MySQL / Local Data |
 | Build Tool | Manual / Maven (based on setup) |
 
-## Folder Structure 
+## 📁 Folder Structure 
 
 Mini-Banking-App/
 │
