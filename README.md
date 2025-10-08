@@ -130,7 +130,7 @@ MiniBankApp/
 
 ### Steps to Run
 1. **Clone the Repository**
-   ```bash
+   ```
    git clone https://github.com/your-username/MiniBankApp.git
 2. **Import into Eclipse**
 
