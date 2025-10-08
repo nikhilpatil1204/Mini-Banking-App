@@ -6,32 +6,32 @@ It enables users to securely log in using **Google OAuth 2.0**, manage their ban
 The app runs on **Apache Tomcat Server** and stores data in a **MySQL** database.  
 It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 
-## 🚀 Main Features
-### 1. Secure Authentication
+## 🚀 Features
+### Secure Authentication
 - Login using **Google OAuth 2.0** for enhanced security.
 - Session-based authentication ensures secure access control.
 - Supports logout functionality with automatic session invalidation.
 
-### 2. Bank Account Management
+### Bank Account Management
 - View, link, and manage multiple bank accounts.
 - Bank list dynamically fetched using the **BankListServlet**.
 - Allows account registration and linking through dedicated JSP pages.
 
-### 3. Transaction Management
+### Transaction Management
 - Simulated **Deposit** and **Withdrawal** features.
 - Perform secure **money transfers** between linked accounts.
 - Validates and logs all transactions for tracking.
 
-### 4. Transaction History & Profile
+### Transaction History & Profile
 - Displays a detailed transaction history for each user.
 - Allows profile updates and personal information editing.
 - Dashboard shows account overview and latest transaction data.
 
-### 5. Admin Module
+### Admin Module
 - Admin login with a separate dashboard.
 - Admins can view user data, manage banks, and perform administrative operations.
 
-### 6. User-Friendly Interface
+### User-Friendly Interface
 - Responsive and modern design using **Bootstrap**.
 - Easy navigation between Home, Profile, MyBanks, and Transaction pages.
 - Clean layout with properly linked JSP pages and servlets.
