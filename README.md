@@ -131,17 +131,19 @@ MiniBankApp/
 - Internet connection (for Google OAuth)
 
 ### Steps to Run
-1. **Clone the Repository**
+#### 1. **Clone the Repository**
  
    ```bash
-   git clone https://github.com/nikhilpatil1204/MiniBankApp.git 
-3. **Import into Eclipse**
+   git clone https://github.com/nikhilpatil1204/MiniBankApp.git
+   ```
+
+#### 2. **Import into Eclipse**
 
 - Open Eclipse → File → Import → Existing Projects into Workspace
 
-  Select the project folder.
+- Select the project folder.
 
-3. **Configure MySQL Database**
+#### 3. **Configure MySQL Database**
 
 - Create a new database in MySQL (e.g., minibankdb).
 
@@ -149,7 +151,7 @@ MiniBankApp/
 
 - Update your database connection details in the Servlet files or a config file.
 
-4. **Configure Google OAuth**
+#### 4. **Configure Google OAuth**
 
 - Go to Google Cloud Console.
 
@@ -159,7 +161,7 @@ MiniBankApp/
 
 - Update these credentials in your Servlet code.
 
-5. **Run on Tomcat Server**
+#### 5. **Run on Tomcat Server**
 
 - Right-click project → Run As → Run on Server.
 
