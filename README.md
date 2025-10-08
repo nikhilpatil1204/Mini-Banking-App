@@ -65,7 +65,7 @@ It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 - **Manual Build / WAR Export** used for deploying to Tomcat.
 
 ## 📁 Folder Structure
-MiniBankApp/
+''MiniBankApp/
 │
 ├── src/
 │ └── main/
@@ -107,7 +107,7 @@ MiniBankApp/
 │ └── UpdateProfile.jsp
 │
 └── Servers/
-└── Tomcat v9.0 Server at localhost-config
+└── Tomcat v9.0 Server at localhost-config''
 
 ## ⚡ How It Works
 1. User visits the **Login.jsp** page and signs in using **Google OAuth**.  
