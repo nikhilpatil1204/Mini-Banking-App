@@ -33,9 +33,26 @@ The project also integrates **Google OAuth Login** and connects to a backend ser
 | Database (if any) | MySQL / Local Data |
 | Build Tool | Manual Setup / Maven (as per use) |
 
-## ⚙️ Setup Instructions
+## Folder structure
 
-### 1. Clone Repository
-```bash
-git clone https://github.com/your-username/Mini-Banking-App.git
+Mini-Banking-App/
+│
+├── src/
+│   ├── com.bank.servlet/
+│   │   ├── GoogleLoginServlet.java
+│   │   ├── FetchBankServlet.java
+│   │   └── ...
+│
+├── WebContent/
+│   ├── index.jsp
+│   ├── home.jsp
+│   ├── WEB-INF/
+│   │   └── web.xml
+│
+├── lib/
+│   ├── gson.jar
+│   ├── servlet-api.jar
+│
+└── README.md
+
 
