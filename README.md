@@ -26,24 +26,26 @@ The project runs on the **Apache Tomcat Server** and uses **Google OAuth 2.0** f
 
 ## 📁 Folder Structure 
 
-Mini-Banking-App/
+MiniBankingApp/
 │
-├── src/
-│   ├── com.bank.servlet/
-│   │   ├── GoogleLoginServlet.java
-│   │   ├── FetchBankServlet.java
-│   │   └── ...
+├─ src/                # Java source files
+│   ├─ main/
+│   │   ├─ java/       # Java classes
+│   │   └─ webapp/     # JSP, HTML, CSS, JS
+│   │       ├─ WEB-INF/
+│   │       │   └─ web.xml
+│   │       ├─ jsp/
+│   │       │   ├─ login.jsp
+│   │       │   ├─ dashboard.jsp
+│   │       │   └─ ...
+│   │       ├─ css/
+│   │       ├─ js/
+│   │       └─ images/
 │
-├── WebContent/
-│   ├── index.jsp
-│   ├── home.jsp
-│   ├── WEB-INF/
-│   │   └── web.xml
-│
-├── lib/
-│   ├── gson.jar
-│   ├── servlet-api.jar
-│
-└── README.md
+├─ lib/                # Any external libraries (JARs)
+├─ build/              # Compiled files (usually ignored in Git)
+├─ .gitignore
+├─ pom.xml or build.gradle  # If using Maven/Gradle
+└─ README.md
 
 
