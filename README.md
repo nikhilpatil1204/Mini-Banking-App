@@ -6,8 +6,7 @@ It enables users to securely log in using **Google OAuth 2.0**, manage their ban
 The app runs on **Apache Tomcat Server** and stores data in a **MySQL** database.  
 It is built as a **Dynamic Web Project** using **Eclipse IDE**.
 
-![Uploading Bank img.jpg…]()
-
+![Folder Structure](https://i.pinimg.com/1200x/cb/0c/e3/cb0ce36430155f76fd5a8a0ed7c5625b.jpg)
 
 ## 🚀 Features
 ### Secure Authentication
