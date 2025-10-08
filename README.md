@@ -108,3 +108,12 @@ MiniBankApp/
 │
 └── Servers/
 └── Apache Tomcat
+
+
+## ⚡ How It Works
+1. User visits the **Login.jsp** page and signs in using **Google OAuth**.  
+2. On successful login, the **GoogleCallbackServlet** verifies and fetches user details.  
+3. The user is redirected to the **Home.jsp** or **Dashboard** page.  
+4. The app loads linked bank accounts using **BankListServlet**.  
+5. The user can perform transactions such as deposit, transfer, or withdrawal.  
+6. Transaction history and profile updates are managed through JSP pages and backend Servlets.
